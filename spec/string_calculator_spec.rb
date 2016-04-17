@@ -20,6 +20,12 @@ describe StringCalculator do
           expect(StringCalculator.add("10")).to eql(10)
         end
       end
+
+      context "with decimals '10.5'" do
+        it "returns 10.5" do
+          expect(StringCalculator.add("10.5")).to eql(10.5)
+        end
+      end
     end
 
     context "given two numbers" do
