@@ -54,6 +54,12 @@ describe StringCalculator do
           expect(StringCalculator.add("1,2,3,4,55,35")).to eql(100)
         end
       end
+
+      context "with decimals '1,2.5,3.3,4,55,35.1'" do
+        it "returns 100.9" do
+          expect(StringCalculator.add("1,2.5,3.3,4,55,35.1")).to eql(100.9)
+        end
+      end
     end
   end
 end
