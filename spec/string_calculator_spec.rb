@@ -35,5 +35,19 @@ describe StringCalculator do
         end
       end
     end
+
+    context "given multiple numbers" do
+      context "'2,4,94'" do
+        it "returns 100" do
+          expect(StringCalculator.add("2,4,94")).to eql(100)
+        end
+      end
+
+      context "'1,2,3,4,55,35'" do
+        it "returns 100" do
+          expect(StringCalculator.add("1,2,3,4,55,35")).to eql(100)
+        end
+      end
+    end
   end
 end
