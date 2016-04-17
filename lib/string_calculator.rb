@@ -1,5 +1,6 @@
 class StringCalculator
   def self.add(string)
-    string.to_i
+    numbers = string.split(",")
+    numbers[0].to_i + numbers[1].to_i
   end
 end
