@@ -33,12 +33,14 @@ RSpec is a testing tool for Ruby, created for (BDD). It is the most frequently u
 
 ### Tests
 
-Good tests are:
+Good RSpec unit tests are:
 
 - automated
 - repeatable
 - fast
+- isolated
 - covering edge cases
+- following these styles: <http://betterspecs.org/>
 
 
 ### Committing
